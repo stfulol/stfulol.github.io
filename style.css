@@ -158,6 +158,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
+    width: 100%;
 }
 
 .subheading {
@@ -199,7 +200,7 @@ body {
 
 .site {
     display: block;
-    margin: 10px 0px;
+    margin: 0px 0px;
 }
 
 .site p {
@@ -215,6 +216,7 @@ body {
 
 .project-image img {
     border: 1px solid black;
+    margin: 10px 10px;
 }
 
 .page-footer {
@@ -230,4 +232,17 @@ body {
 
 .btn {
     margin-bottom: 26px;
+}
+
+.about-site {
+    display: flexbox;
+    margin: 10px 0;
+    background-color: #141530;
+    padding: 0 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.about-site-font {
+    color: white;
 }
