@@ -90,6 +90,19 @@ body {
     opacity: 0.5;
 }
 
+.header-home,
+.footer-home {
+    padding-left: 28px;
+    background-image: url("img/home.svg");
+}
+
+.header-home:focus,
+.header-home:hover,
+.footer-home:focus,
+.footer-home:hover {
+    background-image: url("img/home-alt.svg");
+}
+
 .hero-image {
     position: relative;
     padding-top: 200px;
@@ -208,4 +221,13 @@ body {
     margin-top: 40px;
     padding: 40px 0;
     background-color: #212349;
+}
+
+.description p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    margin-bottom: 26px;
 }
