@@ -246,3 +246,11 @@ body {
 .about-site-font {
     color: white;
 }
+
+h3 {
+    margin: 0 0 16px;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    color: #f9dd79;
+}
