@@ -210,8 +210,8 @@ body {
 
 .card {
     padding-top: 10px;
-    border: 1px solid white;
-    border-radius: 1%;
+   /* border: 1px solid white;
+    border-radius: 1%; */
 }
 
 .project-image img {
