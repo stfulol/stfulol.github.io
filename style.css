@@ -76,6 +76,7 @@ body {
 .footer-phone {
     padding-left: 21px;
     background-image: url("img/icon-phone.svg");
+    display: none;
 }
 
 .header-phone:focus,
