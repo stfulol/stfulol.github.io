@@ -55,7 +55,7 @@
 		<div class='left'>
 			<div class='rowForm'>
 				<label>Подходящий автомобиль</label>
-				<select name='selectAuto'><option value='auto-20'>до 2 т до 6 м</option><option value='auto-12'>до 5т до 6м</option><option value='auto-16'>Манипулятор до 5т до 6м</option><option value='auto-13'>до 10т до 6м</option><option value='auto-17'>Манипулятор до 10т до 12м</option><option value='auto-14'>до 20т до 12м</option></select>			</div>
+				<select name='selectAuto'><option value='auto-20'>А/м загрузка 3 м до 0,9 т</option><option value='auto-12'>А/м загрузка 6 м до 1,5 т</option><option value='auto-16'>А/м загрузка 6 м до 5 т</option><option value='auto-13'>А/м загрузка 12 м до 20 т</option><option value='auto-17'>Курьер</option><option value='auto-14'>Курьер на а/м</option></select>			</div>
 			<div class='rowForm adres'>
 				<label>Адрес</label>
 				<input type=text id='adres' name='adres'>
@@ -63,7 +63,7 @@
 			</div>
 
 		</div>
-		<div class='right'>
+		<div class='right' style="display:none">
 			<div class='rowForm'>
 				<label>Длинна груза</label>
 				<input type="button" class="minus" value="-"><input type='text' name="length" value="0"/> <input type="button" class="plus" value="+"> м<br/>
@@ -96,7 +96,7 @@
 <br/>
 <br/>
 <br/>
-	<table class='forText priceTable'><tr><th>Авто</th><th>Грузоподъемность, тн.</th><th>Метраж, м</th><th>Цена от ТТК до МКАД, руб</th><th>Цена внутри ТТК, руб</th><th>Цена за км от МКАД</th></tr><tr>
+	<table class='forText priceTable' style="display:none"><tr><th>Авто</th><th>Грузоподъемность, тн.</th><th>Метраж, м</th><th>Цена от ТТК до МКАД, руб</th><th>Цена внутри ТТК, руб</th><th>Цена за км от МКАД</th></tr><tr>
 					<td>до 2 т до 6 м</td>
 					<td>2.00</td>
 					<td>6.00</td>
@@ -157,68 +157,68 @@
 </p> 
 </div>
 	<div id="kalkAuto" style="display: none">
-		<br/><h2 class='headText'><span class='greenBorder'>Автомобили для грузов массой до 2 тонн</span></h2><br/>
+		<br/><h2 class='headText'><span class='greenBorder'>А/м загрузка 3 м до 0,9 т</span></h2><br/>
 			<div id='auto-20'>
-				<h4>до 2 т до 6 м</h4>
-				<div class='tonnage'><label class='name'>Тоннаж: </label><label class='value'>2.00</label> т</div>
-				<div class='length'><label class='name'>Длина: </label><label class='value'>6.00</label> м</div>
-				<div class='z_mmk'><label class='name'>Стоимость от ТТК до МКАД: </label><label class='value'>4000</label> р.</div>
-				<div class='z_ttk'><label class='name'>Стоимость ТТК, СК: </label><label class='value'>5000</label> р.</div>
+				<h4>А/м загрузка 3 м до 0,9 т</h4>
+				<div class='tonnage'><label class='name'>Тоннаж: </label><label class='value'>0.90</label> т</div>
+				<div class='length'><label class='name'>Длина: </label><label class='value'>3.00</label> м</div>
+				<div class='z_mmk'><label class='name'>Стоимость от ТТК до МКАД: </label><label class='value'>6000</label> р.</div>
+				<div class='z_ttk'><label class='name'>Стоимость ТТК, СК: </label><label class='value'>7000</label> р.</div>
 				<div class='priceToKm'><label class='name'>Стоимость 1км от МКАД: </label><label class='value'>90.00</label> р.</div>
 				<input type='hidden' class='manipulyator' name='manipulyator' value='0'>
 				<input type=button class='button green' value='Рассчитать'>
 			</div>
-			<br/><h2 class='headText'><span class='greenBorder'>Автомобили для грузов массой до 5 тонн</span></h2><br/>
+			<br/><h2 class='headText'><span class='greenBorder'>А/м загрузка 6 м до 1,5 т</span></h2><br/>
 			<div id='auto-12'>
-				<h4>до 5т до 6м</h4>
-				<div class='tonnage'><label class='name'>Тоннаж: </label><label class='value'>5.00</label> т</div>
+				<h4>А/м загрузка 6 м до 1,5 т</h4>
+				<div class='tonnage'><label class='name'>Тоннаж: </label><label class='value'>1.50</label> т</div>
 				<div class='length'><label class='name'>Длина: </label><label class='value'>6.00</label> м</div>
-				<div class='z_mmk'><label class='name'>Стоимость от ТТК до МКАД: </label><label class='value'>6500</label> р.</div>
-				<div class='z_ttk'><label class='name'>Стоимость ТТК, СК: </label><label class='value'>7500</label> р.</div>
+				<div class='z_mmk'><label class='name'>Стоимость от ТТК до МКАД: </label><label class='value'>9000</label> р.</div>
+				<div class='z_ttk'><label class='name'>Стоимость ТТК, СК: </label><label class='value'>10000</label> р.</div>
 				<div class='priceToKm'><label class='name'>Стоимость 1км от МКАД: </label><label class='value'>90.00</label> р.</div>
 				<input type='hidden' class='manipulyator' name='manipulyator' value='0'>
 				<input type=button class='button green' value='Рассчитать'>
 			</div>
 			
 			<div id='auto-16'>
-				<h4>Манипулятор до 5т до 6м</h4>
+				<h4>А/м загрузка 6 м до 5 т</h4>
 				<div class='tonnage'><label class='name'>Тоннаж: </label><label class='value'>5.00</label> т</div>
 				<div class='length'><label class='name'>Длина: </label><label class='value'>6.00</label> м</div>
-				<div class='z_mmk'><label class='name'>Стоимость от ТТК до МКАД: </label><label class='value'>11500</label> р.</div>
-				<div class='z_ttk'><label class='name'>Стоимость ТТК, СК: </label><label class='value'>12500</label> р.</div>
+				<div class='z_mmk'><label class='name'>Стоимость от ТТК до МКАД: </label><label class='value'>10000</label> р.</div>
+				<div class='z_ttk'><label class='name'>Стоимость ТТК, СК: </label><label class='value'>11000</label> р.</div>
 				<div class='priceToKm'><label class='name'>Стоимость 1км от МКАД: </label><label class='value'>90.00</label> р.</div>
-				<input type='hidden' class='manipulyator' name='manipulyator' value='1'>
+				<input type='hidden' class='manipulyator' name='manipulyator' value='0'>
 				<input type=button class='button green' value='Рассчитать'>
 			</div>
 			<br/><h2 class='headText'><span class='greenBorder'>Автомобили для грузов массой до 10 тонн</span></h2><br/>
 			<div id='auto-13'>
-				<h4>до 10т до 6м</h4>
-				<div class='tonnage'><label class='name'>Тоннаж: </label><label class='value'>10.00</label> т</div>
-				<div class='length'><label class='name'>Длина: </label><label class='value'>6.00</label> м</div>
-				<div class='z_mmk'><label class='name'>Стоимость от ТТК до МКАД: </label><label class='value'>10000</label> р.</div>
-				<div class='z_ttk'><label class='name'>Стоимость ТТК, СК: </label><label class='value'>11000</label> р.</div>
+				<h4>А/м загрузка 12 м до 20 т</h4>
+				<div class='tonnage'><label class='name'>Тоннаж: </label><label class='value'>20.00</label> т</div>
+				<div class='length'><label class='name'>Длина: </label><label class='value'>12.00</label> м</div>
+				<div class='z_mmk'><label class='name'>Стоимость от ТТК до МКАД: </label><label class='value'>20000</label> р.</div>
+				<div class='z_ttk'><label class='name'>Стоимость ТТК, СК: </label><label class='value'>21000</label> р.</div>
 				<div class='priceToKm'><label class='name'>Стоимость 1км от МКАД: </label><label class='value'>100.00</label> р.</div>
 				<input type='hidden' class='manipulyator' name='manipulyator' value='0'>
 				<input type=button class='button green' value='Рассчитать'>
 			</div>
 			
 			<div id='auto-17'>
-				<h4>Манипулятор до 10т до 12м</h4>
+				<h4>Курьер</h4>
 				<div class='tonnage'><label class='name'>Тоннаж: </label><label class='value'>10.00</label> т</div>
 				<div class='length'><label class='name'>Длина: </label><label class='value'>12.00</label> м</div>
-				<div class='z_mmk'><label class='name'>Стоимость от ТТК до МКАД: </label><label class='value'>15000</label> р.</div>
-				<div class='z_ttk'><label class='name'>Стоимость ТТК, СК: </label><label class='value'>16000</label> р.</div>
+				<div class='z_mmk'><label class='name'>Стоимость от ТТК до МКАД: </label><label class='value'>1000</label> р.</div>
+				<div class='z_ttk'><label class='name'>Стоимость ТТК, СК: </label><label class='value'>1000</label> р.</div>
 				<div class='priceToKm'><label class='name'>Стоимость 1км от МКАД: </label><label class='value'>100.00</label> р.</div>
-				<input type='hidden' class='manipulyator' name='manipulyator' value='1'>
+				<input type='hidden' class='manipulyator' name='manipulyator' value='0'>
 				<input type=button class='button green' value='Рассчитать'>
 			</div>
-			<br/><h2 class='headText'><span class='greenBorder'>Автомобили для грузов массой до 20 тонн</span></h2><br/>
+			<br/><h2 class='headText'><span class='greenBorder'>Курьер на а/м</span></h2><br/>
 			<div id='auto-14'>
-				<h4>до 20т до 12м</h4>
+				<h4>Курьер на а/м</h4>
 				<div class='tonnage'><label class='name'>Тоннаж: </label><label class='value'>20.00</label> т</div>
 				<div class='length'><label class='name'>Длина: </label><label class='value'>12.00</label> м</div>
-				<div class='z_mmk'><label class='name'>Стоимость от ТТК до МКАД: </label><label class='value'>18000</label> р.</div>
-				<div class='z_ttk'><label class='name'>Стоимость ТТК, СК: </label><label class='value'>19000</label> р.</div>
+				<div class='z_mmk'><label class='name'>Стоимость от ТТК до МКАД: </label><label class='value'>1500</label> р.</div>
+				<div class='z_ttk'><label class='name'>Стоимость ТТК, СК: </label><label class='value'>1500</label> р.</div>
 				<div class='priceToKm'><label class='name'>Стоимость 1км от МКАД: </label><label class='value'>100.00</label> р.</div>
 				<input type='hidden' class='manipulyator' name='manipulyator' value='0'>
 				<input type=button class='button green' value='Рассчитать'>
@@ -325,7 +325,7 @@ input.addEventListener('keyup', function( e ) {
 		
 		
 	</div>
-</section>      <!--<script src="/templates/frontend/assets/js/script.js"></script>!-->
+</section> 
  
       
 
