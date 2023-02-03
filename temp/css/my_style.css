@@ -411,7 +411,7 @@ input[type=button].link{
 
 .button.green{
     color: #fff;
-    background: #80c923;
+    background: #479701;
 
     border:none;
 }
@@ -499,7 +499,7 @@ span.price oldprice{
 }
 
 .headText.dark .greenBorder{
-    color:#242424;
+    color:#479701;
 }
 
 table.inlineTD{width:100%; font-size:19px;}
